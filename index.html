@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>
+      Security Lab
+    </title>
+    <style>
+body{
+  background-image:url("image/time1.jpeg");
+  width:1200px;
+}
+h1{
+  color:red;
+  width:245px;
+  margin:0;
+}
+.boole_number_btn{
+  background-color: #1B6BBB;
+  color:white;
+  cursor: pointer;
+  width:105px;
+  padding:0;
+}
+.boole_number{
+  width:95px;
+  display: inline-block;
+}
+#boole{
+  text-align: center;
+  background-color: black;
+  color:red;
+  padding:0;
+  margin:0;
+  width:140px;
+  display: block;
+}
+.boole_number_content{
+  background-color: #f9f9f9;
+  display: none;
+  position: absolute;
+  width:105px;
+}
+.boole_number_content a{
+  color: black;
+  text-decoration: none;
+  width:105px;
+  display: block;
+}
+.boole_number_content a:hover{background-color: red;}
+.boole_number:hover .boole_number_content{
+  display: block;
+}
+.boole_number:hover .boole_number_btn{
+  background-color: red;
+}
+iframe{
+  display:inline;
+  position: absolute;
+  left:500px;
+  width:1390px;
+  height:925px;
+  align:bottom;
+}
+.boole_string_btn{
+  background-color: #1DB202;
+  color:white;
+  cursor:pointer;
+  width:105px;
+  padding:0px;
+}
+.boole_string_content{
+  background-color:#f9f9f9;
+  position:absolute;
+  display:none;
+}
+.boole_string:hover .boole_string_content{
+  display: block;
+}
+.boole_string:hover .boole_string_btn{
+  background-color:red;
+}
+.boole_string{
+  background-color:white;
+  width:92px;
+  display:inline-block;
+}
+.boole_string_content:hover a:hover{
+  background-color:red;
+}
+.boole_string_content a{
+  text-decoration:none;
+  display: block;
+  color:black;
+  width:105px;
+}
+.boole_header_btn{
+  background-color: #9C0293;
+  width:105px;
+  padding:0;
+  margin:0;
+  color:white;
+  cursor: pointer;
+}
+.boole_header{
+  background-color:white;
+  width:92px;
+  display: inline-block;
+}
+.boole_header:hover .boole_header_btn{
+  background-color:red;
+}
+.boole_header_content{
+  position: absolute;
+  display: none;
+}
+.boole_header:hover .boole_header_content{
+  display:block;
+  background-color:white;
+}
+.boole_header_content:hover a:hover{
+  background-color:red;
+}
+.boole_header_content a{
+  display:block;
+  text-decoration:none;
+  color:black;
+  width:105px;
+}
+.boole_cookie:hover .boole_cookie_btn{
+  background-color:red;
+}
+.boole_cookie_content{
+  position:absolute;
+  display: none;
+}
+.boole_cookie:hover .boole_cookie_content{
+  display:block;
+  background-color:white;
+}
+.boole_cookie_content:hover a:hover{
+  background-color:red;
+}
+.boole_cookie_content a{
+  display:block;
+  width:105px;
+  text-decoration:none;
+  color:black;
+}
+.boole_cookie{
+  background-color: #000000;
+  width:92px;
+  display: inline-block;
+}
+.boole_cookie_btn{
+  width: 105px;
+  background-color: #EAE300;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.boole_search:hover .boole_search_btn{
+  background-color:red;
+}
+.boole_search_content{
+  position:absolute;
+  display: none;
+}
+.boole_search:hover .boole_search_content{
+  display:block;
+  background-color:white;
+}
+.boole_search_content:hover a:hover{
+  background-color:red;
+}
+.boole_search_content a{
+  display:block;
+  width:105px;
+  text-decoration:none;
+  color:black;
+}
+.boole_search{
+  background-color: #000000;
+  width:92px;
+  display: inline-block;
+}
+.boole_search_btn{
+  width: 105px;
+  background-color: #CE4000;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+    <h1>SQL INJCTION</h1>
+    <iframe name="show" frameborder="0"></iframe>
+    <div class="id"><span id="boole">BOOLE BASES</span></div>
+    <div class="boole_number">
+      <button class="boole_number_btn">Number Bases</button>
+    <div class="boole_number_content">
+      <a href="boole_number/number_get0.php" target="show">number0</a>
+      <a href="boole_number/number_get1.php" target="show">number1</a>
+      <a href="boole_number/number_get2.php" target="show">number2</a>
+      <a href="boole_number/number_post0.php" target="show">number3</a>
+      <a href="boole_number/number_post1.php" target="show">number4</a>
+    </div>
+    </div>
+    <div class="boole_string">
+      <button class="boole_string_btn">String Bases</button>
+      <div class="boole_string_content">
+        <a href="boole_string/string_get0.php" target="show">string0</a>
+        <a href="boole_string/string_get1.php" target="show">string1</a>
+        <a href="boole_string/string_get2.php" target="show">string2</a>
+        <a href="boole_string/string_post0.php" target="show">string3</a>
+        <a href="boole_string/string_post1.php" target="show">string4</a>
+      </div>
+    </div>
+    <div class="boole_header">
+      <button class="boole_header_btn">Header Bases</button>
+      <div class="boole_header_content">
+        <a href="boole_header/header0.php" target="show">header0</a>
+        <a href="boole_header/header1.php" target="show">header1</a>
+        <a href="boole_header/header2.php" target="show">header2</a>
+      </div>
+    </div>
+    <div class="boole_cookie">
+      <button class="boole_cookie_btn">Cookie Bases</button>
+      <div class="boole_cookie_content">
+        <a href="boole_cookie/cookie0.php" target="show">cookie0</a>
+        <a href="boole_cookie/cookie1.php" target="show">cookie1</a>
+        <a href="boole_cookie/cookie2.php" target="show">cookie2</a>
+      </div>
+    </div>
+    </div>
+    </div>
+   <span id="boole">ERROR BASES</span>
+    <div class="boole_number">
+      <button class="boole_number_btn">Number Bases</button>
+    <div class="boole_number_content">
+      <a href="error_number/number_get0.php" target="show">number0</a>
+      <a href="error_number/number_get1.php" target="show">number1</a>
+      <a href="error_number/number_get2.php" target="show">number2</a>
+      <a href="error_number/number_post0.php" target="show">number3</a>
+      <a href="error_number/number_post1.php" target="show">number4</a>
+    </div>
+    </div>
+    <div class="boole_string">
+      <button class="boole_string_btn">String Bases</button>
+      <div class="boole_string_content">
+        <a href="error_string/string_get0.php" target="show">string0</a>
+        <a href="error_string/string_get1.php" target="show">string1</a>
+        <a href="error_string/string_get2.php" target="show">string2</a>
+        <a href="error_string/string_post0.php" target="show">string3</a>
+        <a href="error_string/string_post1.php" target="show">string4</a>
+      </div>
+    </div>
+    <span id="boole">TIME BASES</span>
+    <div class="boole_number">
+      <button class="boole_number_btn">Number Bases</button>
+    <div class="boole_number_content">
+      <a href="time_number/number_get0.php" target="show">number0</a>
+      <a href="time_number/number_get1.php" target="show">number1</a>
+      <a href="time_number/number_get2.php" target="show">number2</a>
+      <a href="time_number/number_post0.php" target="show">number3</a>
+      <a href="time_number/number_post1.php" target="show">number4</a>
+    </div>
+    </div>
+    <div class="boole_string">
+      <button class="boole_string_btn">String Bases</button>
+      <div class="boole_string_content">
+        <a href="time_string/string_get0.php" target="show">string0</a>
+        <a href="time_string/string_get1.php" target="show">string1</a>
+        <a href="time_string/string_get2.php" target="show">string2</a>
+        <a href="time_string/string_post0.php" target="show">string3</a>
+        <a href="time_string/string_post1.php" target="show">string4</a>
+      </div>
+    </div>
+    <h1>FILE INCLUDE</h1>
+    <div class="boole_number">
+      <button class="boole_number_btn" style="width:200px;">local and remote file  Include</button>
+    <div class="boole_number_content" style="width:200px">
+      <a href="local_include/local_include0.php" target="show" style="width:200px">include0</a>
+      <a href="local_include/local_include1.php" target="show" style="width:200px">include1</a>
+    </div>
+    </div>
+    <h1>FILE UPLOAD</h1>
+    <div class="boole_number">
+      <button class="boole_number_btn">File Upload</button>
+    <div class="boole_number_content">
+      <a href="file_upload/file_upload0.php" target="show">upload0</a>
+    </div>
+    </div>
+    <h1>WEAK SESSION</h1>
+    <div class="boole_number">
+      <button class="boole_number_btn">SESSION</button>
+    <div class="boole_number_content">
+      <a href="boole_cookie/session0.php" target="show">session0</a>
+    </div>
+    </div>
+    <h1>BRUTE FORCE</h1>
+    <div class="boole_number">
+    <button class="boole_number_btn">Brute Force</button>
+    <div class="boole_number_content">
+      <a href="bruteforce/bruteforce0.php" target="show">brute force0</a>
+    </div>
+    </div>
+    <h1>CSRF</h1>
+    <div class="boole_number">
+      <button class="boole_number_btn">Csrf</button>
+    <div class="boole_number_content">
+      <a href="csrf/csrf0.php" target="show">csrf0</a>
+    </div>
+    </div>
+    <h1>XSS</h2>
+    <div class="boole_number">
+      <button class="boole_number_btn">Xss Bases</button>
+    <div class="boole_number_content">
+      <a href="xss/xss0.php" target="show">xss0</a>
+      <a href="xss/xss1.php" target="show">xss1</a>
+      <a href="" target="show">comeing soon</a>
+    </div>
+    </div>
+    <h1>SSRF</h1>
+    <div class="boole_number">
+      <button class="boole_number_btn">Ssrf</button>
+    <div class="boole_number_content">
+      <a href="ssrf/ssrf0.php" target="show">ssrf0</a>
+      <a href="ssrf/ssrf1.php" target="show">ssrf1</a>
+    </div>
+    </div>
+    <h1>XXE</h1>
+    <div class="boole_number">
+      <button class="boole_number_btn">XXE</button>
+    <div class="boole_number_content">
+      <a href="" target="show">comeing soon</a>
+      <a href="" target="show">comeing soon</a>
+    </div>
+    </div>
+  </body>
+</html>
